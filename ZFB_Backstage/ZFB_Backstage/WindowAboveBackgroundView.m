@@ -34,12 +34,14 @@
     imageView.frame = self.frame;
     imageView.image = GaussianBlurImage;
 }
+
 - (void)show{
     UIWindow *window =[[[UIApplication sharedApplication]delegate]window];
     [window addSubview:self];
 }
+
 - (void)hidden{
-        [self removeFromSuperview];
+    [self removeFromSuperview];
 }
 /*
 // Only override drawRect: if you perform custom drawing.

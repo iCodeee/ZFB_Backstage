@@ -17,6 +17,7 @@
     });
     return _sharedScreenshots;
 }
+
 #pragma mark - 获得屏幕截图
 - (BOOL)dataWithScreenshotInPNGFormat
 {
@@ -64,6 +65,7 @@
     NSData *imgData =  UIImagePNGRepresentation(image);
     return [self writeFile:imgData];
 }
+
 #pragma mark - 将截屏保存到沙盒
 - (BOOL)writeFile:(NSData *)file
 {
@@ -79,8 +81,8 @@
     NSLog(@"56832%@",NSHomeDirectory());
     
     return iswriteToFile;
-    
 }
+
 #pragma mark - 读取沙盒里面保存的截图
 - (UIImage *)readFile
 {

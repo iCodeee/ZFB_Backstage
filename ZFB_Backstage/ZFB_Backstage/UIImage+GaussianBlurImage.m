@@ -9,6 +9,7 @@
 #import "UIImage+GaussianBlurImage.h"
 
 @implementation UIImage (GaussianBlurImage)
+
 + (UIImage *)coreGaussianBlurImage:(UIImage * _Nonnull)image  blurNumber:(CGFloat)blur{
     
     if (!image) {

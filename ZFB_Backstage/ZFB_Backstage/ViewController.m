@@ -23,12 +23,11 @@
     rightBarbtn.tintColor = [UIColor blackColor];
     self.navigationItem.rightBarButtonItem = rightBarbtn;
     
-    
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:self.view.frame];
     [self.view addSubview:imageView];
     imageView.image = [UIImage imageNamed:@"zfb.jpeg"];
-    
 }
+
 - (void)nextAction{
     
     NextVC *VC = [NextVC new];
